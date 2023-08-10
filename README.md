@@ -35,6 +35,8 @@ Andres Rico - MIT Media Lab - aricom@mit.edu
 
 This repository contains all files needed to replicate a fully functional Axol sensing system.
 
+The current version of the system is has four sensor types and a HomeHub communication device. The four sensing units include tank sensors, bucket sensors, quality sensors and environmental sensors.
+
 It is advised to firstly manufacture a HomeHub device as all other sensors directly connect to the Homehub. 
 
 You can register all devices at http://blindspot.media.mit.edu/homehubweb/registration.html
@@ -42,3 +44,9 @@ All devices must be paired with a Homehub that has been previously registered.
 
 You can check your systems data at http://blindspot.media.mit.edu/homehubweb/status_check.html
 By just typing in your homehubs registered mac address. 
+
+<h2>Data Handling</h2>
+
+The system uses the Homehub to send data to a server hosted @MIT. All of the data of registered devices is accessible by the developers of the platform. If you do not want developers to have access you will need to build backend infrstructure that will allow you to save data in a different server and modify the connect_send(), get_system_stats(), and server_send() function in the homehubs <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
+
+Please contact aricom@mit.edu for historical access to data for your system. 
