@@ -23,6 +23,9 @@
 
 
 ```
+
+<img src="images/axol_system.jpeg">
+
 Axol sensing system. 
 
 Sensors for granular assessment of water usage
