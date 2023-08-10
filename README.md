@@ -25,4 +25,7 @@
 ```
 Axol sensing system. 
 
+Sensors for granular assessment of water usage
+patterns in informal settlements
+
 Andres Rico - MIT Media Lab - aricom@mit.edu
