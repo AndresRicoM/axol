@@ -24,14 +24,14 @@
           ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
 
-```
-
-<h1>Axol sensing system. </h1>
-
 Sensors for granular assessment of water usage
 patterns in informal settlements
 
 Andres Rico - MIT Media Lab - aricom@mit.edu
+
+```
+
+<h1>Axol sensing system. </h1>
 
 This repository contains all files needed to replicate a fully functional Axol sensing system.
 
