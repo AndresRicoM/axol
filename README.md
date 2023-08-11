@@ -4,7 +4,7 @@
 
 </div><br><br><br>
 
-<h1> AXOL </h1>
+<h1> axol </h1>
 
 Sensors for granular assessment of water usage patterns in informal settlements.
 
