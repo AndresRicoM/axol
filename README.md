@@ -1,5 +1,5 @@
 <div align="center">
-      <img src="images/CS_logo_w.png" align="left" width="10%">
+      <img src="images/CS_logo_w.png" align="left" width="11%">
       <img src="images/homehubaxol.png" align="right" width="8%">
 
 </div><br><br><br>
