@@ -1,22 +1,20 @@
 <div align="center">
       <img src="images/CS_logo_w.png" align="left" width="10%">
-      <img src="images/homehubaxol.png" align="right" width="10%">
+      <img src="images/homehubaxol.png" align="right" width="8%">
 
 </div><br><br><br>
 
 <h1> AXOL </h1>
-
-Andres Rico - MIT Media Lab - <aricom@mit.edu>
-
-<h1>Axol sensing system. </h1>
-
-<img src="images/axol_system.jpeg">
 
 Sensors for granular assessment of water usage patterns in informal settlements.
 
 This repository contains all files needed to replicate a fully functional Axol sensing system.
 
 The current version of the system is has four sensor types and a HomeHub communication device. The four sensing units include tank sensors, bucket sensors, quality sensors and environmental sensors.
+
+Andres Rico - MIT Media Lab - <aricom@mit.edu>
+
+<img src="images/axol_system.jpeg">
 
 <h1>Devices</h1>
 
