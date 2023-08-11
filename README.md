@@ -37,7 +37,7 @@ Note: It is advised to firstly manufacture a HomeHub device as all other sensors
 <img src="images/tank_sensor.jpeg">
 The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance between a water tanks lid and the water line. With this information we can calculate a containers used volume to detemrine how much water is stored within the container. 
 
-<h2>[Bucket Sensor](https://github.com/AndresRicoM/axol/blob/main/bucket_sensor/)</h2>
+<h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/bucket_sensor">Bucket Sensor</a></h2>
 <img src="images/bucket_sensor.jpeg">
 
 The bucket sensor uses a simple tilt switch. The switch is closed whenever a bucket is flipped. Everytime that the switch is activated, the sensor sends a notice to the Homehub and the Homehub timestamps the information before sending it to the database. 
