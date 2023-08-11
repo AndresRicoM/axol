@@ -2,7 +2,7 @@
       <img src="images/CS_logo_w.png" align="left" width="10%">
       <img src="images/homehubaxol.png" align="right" width="10%">
 
-</div>
+</div><br><br><br>
 
 <h1> AXOL </h1>
 
