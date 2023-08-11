@@ -95,7 +95,7 @@ void send_espnow() {
   WiFi.mode(WIFI_STA);
   int32_t wifi_channel = getWiFiChannel(WIFI_SSID);
   strcpy(myData.id, mac_add);
-  myData.type = 1;
+  myData.type = 1; //Id1 = Bucket Sensor.
 
   //Serial.println(myData.id);
 
