@@ -38,4 +38,4 @@ quantity - component - estimated price
 
 <h2>PCB Diagram</h2>
 
-<img src="../../images/homehub_diagram.jpeg">
+<img src="../images/homehub_diagram.jpeg">
