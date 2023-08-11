@@ -170,7 +170,7 @@ void setup() {
   // Send message via ESP-NOW
   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
 
-  //Change value for higher or lower frequency of data collection. This is the time the ESP32 will sleep for.
+  /////////////////Change value for higher or lower frequency of data collection. This is the time the ESP32 will sleep for.
   esp_sleep_enable_timer_wakeup(43200000000) ; //TIME_TO_SLEEP * uS_TO_S_FACTOR); //Twice per day. Value is in microseconds.
 
   esp_wifi_stop();
