@@ -27,11 +27,11 @@ The current version of the system is has four sensor types and a HomeHub communi
 <h1>Devices</h1>
 
 
-<h2>Homehub</h2>
+<h2>a href="https://github.com/AndresRicoM/axol/tree/main/homehub">HomeHub</a></h2>
 <img src="images/homehub.jpeg">
-The Homehub acts as a user interface and as the centralized data relay for the system. All of the sensing units send the data directly to a Homehub. The Homehub formats and sends the infroamtion to a remote database. 
+The HomeHub acts as a user interface and as the centralized data relay for the system. All of the sensing units send the data directly to a HomeHub. The HomeHub formats and sends the infroamtion to a remote database. 
 
-Note: It is advised to firstly manufacture a HomeHub device as all other sensors directly connect to the Homehub. 
+Note: It is advised to firstly manufacture a HomeHub device as all other sensors directly connect to the HomeHub. 
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/tank_sensor">Tank Sensor</a></h2>
 <img src="images/tank_sensor.jpeg">
@@ -40,7 +40,7 @@ The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/bucket_sensor">Bucket Sensor</a></h2>
 <img src="images/bucket_sensor.jpeg">
 
-The bucket sensor uses a simple tilt switch. The switch is closed whenever a bucket is flipped. Everytime that the switch is activated, the sensor sends a notice to the Homehub and the Homehub timestamps the information before sending it to the database. 
+The bucket sensor uses a simple tilt switch. The switch is closed whenever a bucket is flipped. Everytime that the switch is activated, the sensor sends a notice to the HomeHub and the HomeHub timestamps the information before sending it to the database. 
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/water_quality_sensor">Quality Sensor</a></h2>
 <img src="images/quality_sensor.jpeg">
@@ -61,11 +61,12 @@ We need a [USB-TTL adapter](https://duckduckgo.com/?q=USB-TTL+adapter&atb=v313-1
 
 ```
 Device - Adapter
-3.3V --- 3.3V (or 5V)
-GND  --- GND
-TX   --- RX
-RX   --- TX
+V+   ------ 3.3V (or 5V)
+GND  ------ GND
+TX   ------ RX
+RX   ------ TX
 ```
+
 NOTE: MAKE SURE TO DISCONNECT ANY POWER SUPPLY. THE BOARD SHOULD ONLY BE POWERED BY THE ADAPTER CABLES. 
 NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM TO MAKE SURE YOU ARE CONNECTING PINS CORRECTLY. 
 
@@ -78,14 +79,14 @@ NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM
 
 Each device needs to be individually registered. You can register all devices [here](http://blindspot.media.mit.edu/homehubweb/registration.html). 
 
-All sensors must be paired with a Homehub that has been previously registered. 
+All sensors must be paired with a HomeHub that has been previously registered. 
 
 <h1>Viewing your system's data </h1>
 
 All sensors send their information to the HomeHub, the HomeHub then sends it into a database for storage, calculation of water volumes and consumption and visualization. 
 
 You can check your systems data [here](http://blindspot.media.mit.edu/homehubweb/status_check.html)
-By just typing in your homehubs registered MAC address. 
+By just typing in your HomeHubs registered MAC address. 
 
 <img src="images/dashupdate.gif">
 
@@ -94,6 +95,11 @@ NOTE: ONLY REGISTERED HOMEHUBS WILL ALLOW TO SEE DATA IN THIS DASHBOARD
 
 <h1>Data handling</h1>
 
-The system uses the Homehub to send data to a server hosted @MIT. All of the data of registered devices is accessible by the developers of the platform. If you do not want developers to have access you will need to build backend infrstructure that will allow you to save data in a different server and modify the connect_send(), get_system_stats(), and server_send() function in the homehubs <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
+The system uses the HomeHub to send data to a server hosted @MIT. All of the data of registered devices is accessible by the developers of the platform. If you do not want developers to have access you will need to build backend infrstructure that will allow you to save data in a different server and modify the 
+   connect_send() 
+   get_system_stats()
+   server_send() 
+   
+function in the HomeHub's <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
 
 Please contact <aricom@mit.edu> for historical access to data for your system. 
