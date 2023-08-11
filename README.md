@@ -27,7 +27,7 @@ The current version of the system is has four sensor types and a HomeHub communi
 <h1>Devices</h1>
 
 
-<h2>a href="https://github.com/AndresRicoM/axol/tree/main/homehub">HomeHub</a></h2>
+<h2><a href="https://github.com/AndresRicoM/axol/tree/main/homehub">HomeHub</a></h2>
 <img src="images/homehub.jpeg">
 The HomeHub acts as a user interface and as the centralized data relay for the system. All of the sensing units send the data directly to a HomeHub. The HomeHub formats and sends the infroamtion to a remote database. 
 
