@@ -14,7 +14,7 @@ Andres Rico - MIT Media Lab - <aricom@mit.edu>
 
 ```
 
-<h1>Bucket Sensor </h1>
+<h1>Quality Sensor </h1>
 
-<img src="../../images/Bucket_zoom.gif">
-<img src="../../images/bucket2.gif">
+<img src="images/buoy_floating.gif">
+
