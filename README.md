@@ -65,5 +65,3 @@ By just typing in your homehubs registered mac address.
 The system uses the Homehub to send data to a server hosted @MIT. All of the data of registered devices is accessible by the developers of the platform. If you do not want developers to have access you will need to build backend infrstructure that will allow you to save data in a different server and modify the connect_send(), get_system_stats(), and server_send() function in the homehubs <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
 
 Please contact aricom@mit.edu for historical access to data for your system. 
-
-<h1>License</h1>
