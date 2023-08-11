@@ -40,7 +40,7 @@ The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/bucket_sensor">Bucket Sensor</a></h2>
 <p align="center">
-      <img src="images/bucket_sensor.jpeg" align="left">
+      <img src="images/bucket_sensor.jpeg" >
       <img src="images/bucket_icon.jpeg">
 </p>
 
