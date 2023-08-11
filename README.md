@@ -51,8 +51,34 @@ The quality sensor measures EC in water to get an estimate of Total Dissolved So
 <h2>Environmental Sensor</h2>
 The environmental sensor uses an STH sensor to measure enviroenmental temperature and humidity. The sensor can be a good way to evaluate system and battery performance. It can also be used to track environemetal variables of places were the other sensors are placed. 
 
+<h1>Programming Devices</h1>
 
-<h1>Viewing your systems data </h1>
+Devices can be easily programmed using the [Arduino IDE](https://www.arduino.cc/en/software). You will need to make sure that you have the Espressif [ESP32 core](https://github.com/espressif/arduino-esp32) installed along with all required libraries. 
+
+We need a [USB-TTL adapter](https://duckduckgo.com/?q=USB-TTL+adapter&atb=v313-1&iax=images&ia=images) to program the sensor. 
+
+- Connect Cables as Follows:
+
+```
+Device - Adapter
+3.3V --- 3.3V (or 5V)
+GND  --- GND
+TX   --- RX
+RX   --- TX
+
+NOTE: MAKE SURE TO DISCONNECT ANY POWER SUPPLY. THE BOARD SHOULD ONLY BE POWERED BY THE ADAPTER CABLES. 
+
+NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM TO MAKE SURE YOU ARE CONNECTING PINS CORRECTLY. 
+```
+
+- Once connection is done, Open your serial monitor at a 115200 baud rate, click the reset button on the device and verify that you see inforamtion. 
+- Set ESP to Boot Mode. To set the device on bootmode, press the reset button
+
+- Upload sketch 
+- Reset device. Toggle switch to opposite position and presss the reset button. 
+
+
+<h1>Viewing your system's data </h1>
 
 <img src="images/dashupdate.gif">
 
