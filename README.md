@@ -34,12 +34,16 @@ The HomeHub acts as a user interface and as the centralized data relay for the s
 Note: It is advised to firstly manufacture a HomeHub device as all other sensors directly connect to the HomeHub. 
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/tank_sensor">Tank Sensor</a></h2>
-<img src="images/tank_sensor.jpeg">
-<img src="images/tank_icon.jpeg">
+
+<p align="left">
+      <img src="images/tank_sensor.jpeg" >
+      <img src="images/tank_icon.jpeg">
+</p>
+
 The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance between a water tanks lid and the water line. With this information we can calculate a containers used volume to detemrine how much water is stored within the container. 
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/bucket_sensor">Bucket Sensor</a></h2>
-<p align="center">
+<p align="left">
       <img src="images/bucket_sensor.jpeg" >
       <img src="images/bucket_icon.jpeg">
 </p>
@@ -47,8 +51,11 @@ The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance
 The bucket sensor uses a simple tilt switch. The switch is closed whenever a bucket is flipped. Everytime that the switch is activated, the sensor sends a notice to the HomeHub and the HomeHub timestamps the information before sending it to the database. 
 
 <h2><a href="https://github.com/AndresRicoM/axol/tree/main/sensors/water_quality_sensor">Quality Sensor</a></h2>
-<img src="images/quality_sensor.jpeg">
-<img src="images/quality_icon.jpeg">
+
+<p align="left">
+      <img src="images/quality_sensor.jpeg" >
+      <img src="images/quality_icon.jpeg">
+</p>
 
 The quality sensor measures EC in water to get an estimate of Total Dissolved Solids. 
 
