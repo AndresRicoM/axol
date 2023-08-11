@@ -1,6 +1,6 @@
 <p align="center">
-      <img src="images/CS_logo_w.png" align="left">
-</p>
+      <img src="images/CS_logo_w.png" align="left" width="10%">
+</p><br>
 
 ```
    █████╗ ██╗  ██╗ ██████╗ ██╗     
@@ -12,9 +12,8 @@
 
   ᓬ(• - •)ᕒ
 
-Andres Rico - MIT Media Lab - <aricom@mit.edu>
-
 ```
+Andres Rico - MIT Media Lab - <aricom@mit.edu>
 
 <h1>Axol sensing system. </h1>
 
