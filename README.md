@@ -60,33 +60,37 @@ We need a [USB-TTL adapter](https://duckduckgo.com/?q=USB-TTL+adapter&atb=v313-1
 - Connect Cables as Follows:
 
 ```
-Device - Adapter
-3.3V --- 3.3V (or 5V)
-GND  --- GND
-TX   --- RX
-RX   --- TX
-
-NOTE: MAKE SURE TO DISCONNECT ANY POWER SUPPLY. THE BOARD SHOULD ONLY BE POWERED BY THE ADAPTER CABLES. 
-
-NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM TO MAKE SURE YOU ARE CONNECTING PINS CORRECTLY. 
+               Device - Adapter
+               3.3V --- 3.3V (or 5V)
+               GND  --- GND
+               TX   --- RX
+               RX   --- TX
 ```
+NOTE: MAKE SURE TO DISCONNECT ANY POWER SUPPLY. THE BOARD SHOULD ONLY BE POWERED BY THE ADAPTER CABLES. 
+NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM TO MAKE SURE YOU ARE CONNECTING PINS CORRECTLY. 
 
-- Once connection is done, Open your serial monitor at a 115200 baud rate, click the reset button on the device and verify that you see inforamtion. 
+- Once connection is done, open your serial monitor at a 115200 baud rate, click the reset button on the device and verify that you see inforamtion. 
 - Set ESP to Boot Mode. To set the device on bootmode, press the reset button
-
 - Upload sketch 
 - Reset device. Toggle switch to opposite position and presss the reset button. 
 
+<h1>Device Registration<h1>
+
+Each device needs to be individually registered. You can register all devices at <http://blindspot.media.mit.edu/homehubweb/registration.html>. 
+
+All sensors must be paired with a Homehub that has been previously registered. 
 
 <h1>Viewing your system's data </h1>
 
-<img src="images/dashupdate.gif">
-
-You can register all devices at <http://blindspot.media.mit.edu/homehubweb/registration.html>
-All devices must be paired with a Homehub that has been previously registered. 
+All sensors send their information to the HomeHub, the HomeHub then sends it into a database for storage, calculation of water volumes and consumption and visualization. 
 
 You can check your systems data at <http://blindspot.media.mit.edu/homehubweb/status_check.html>
-By just typing in your homehubs registered mac address. 
+By just typing in your homehubs registered MAC address. 
+
+<img src="images/dashupdate.gif">
+
+NOTE: ONLY REGISTERED HOMEHUBS WILL ALLOW TO SEE DATA IN THIS DASHBOARD
+
 
 <h1>Data handling</h1>
 
