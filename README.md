@@ -1,6 +1,8 @@
 <p align="center">
-      <img src="images/CS_logo_w.png" align="left" width="10%">
-</p><br>
+      <img src="images/CS_logo_w.png" align="left" width="20%">
+      <img src="images/homehubaxol.png" align="center" width="30%">
+
+</p><br><br><br>
 
 ```
    █████╗ ██╗  ██╗ ██████╗ ██╗     
