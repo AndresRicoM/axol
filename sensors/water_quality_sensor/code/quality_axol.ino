@@ -23,6 +23,7 @@
           ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
    Code for water quality sensor. The sensor uses a TDS meter to measure water conductivity.
+   The code is based on the example code provided by DFrobot for the TDS meter.
 
    Andres Rico - aricom@mit.edu
 
@@ -45,7 +46,7 @@
  #define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
  #define TIME_TO_SLEEP  1        /* Time ESP32 will go to sleep (in seconds) */
 
- #define TdsSensorPin 4
+ #define TdsSensorPin 4 //Output pin for giving power to the sensor. 
  #define VREF 3.3      // analog reference voltage(Volt) of the ADC
  #define SCOUNT  30           // sum of sample point
 
@@ -59,8 +60,15 @@
  float temperature;
  float humidity;
 
- uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub device.
- constexpr char WIFI_SSID[] = ""; //Network name, no password needed.
+ ////CHANGE THESE VARIABLES FOR SETUP WITH HOMEHUB AND NETWORK////////
+
+//Receiver address
+ uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub.  
+
+ constexpr char WIFI_SSID[] = ""; //Network name, no password required.
+
+ /////////////////////////////////////////////////////////////////////
+
 
  int32_t getWiFiChannel(const char *ssid) {
 
@@ -131,7 +139,7 @@
 
    sht4x.begin(Wire);
 
-   getHumTemp();
+   getHumTemp(); //Get temperature and humidity for temperature compensation.
 
    float analogSum = 0;
      for (int i = 0 ; i < 50 ; i++) {
@@ -145,9 +153,7 @@
    float compensationCoefficient=1.0+0.02*(temperature-25.0);    //temperature compensation formula: fFinalResult(25^C) = fFinalResult(current)/(1.0+0.02*(fTP-25.0));
    float compensationVolatge=averageVoltage/compensationCoefficient;  //temperature compensation
    tdsValue=(133.42*compensationVolatge*compensationVolatge*compensationVolatge - 255.86*compensationVolatge*compensationVolatge + 857.39*compensationVolatge)*0.5; //convert voltage value to tds value
-   //Serial.print("voltage:");
-   //Serial.print(averageVoltage,2);
-   //Serial.print("V   ");
+
    Serial.print("TDS Value:");
    Serial.print(tdsValue,0);
    Serial.println("ppm");
@@ -188,7 +194,8 @@
    // Send message via ESP-NOW
    esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
 
-   esp_sleep_enable_timer_wakeup(43200000000); //Twice per day. 86400000000); 43200000000 //TIME_TO_SLEEP * uS_TO_S_FACTOR
+   /////////////////Change value for higher or lower frequency of data collection. This is the time the ESP32 will sleep for.
+   esp_sleep_enable_timer_wakeup(43200000000); //TIME_TO_SLEEP * uS_TO_S_FACTOR); //Twice per day. Value is in microseconds.
 
    esp_wifi_stop();
 
