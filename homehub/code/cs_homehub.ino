@@ -7,21 +7,9 @@
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
-  Axol sensing system. 
-
-  ╔═╗┬┌┬┐┬ ┬  ╔═╗┌─┐┬┌─┐┌┐┌┌─┐┌─┐       ╔╦╗╦╔╦╗  ╔╦╗┌─┐┌┬┐┬┌─┐  ╦  ┌─┐┌┐
-  ║  │ │ └┬┘  ╚═╗│  │├┤ ││││  ├┤   ───  ║║║║ ║   ║║║├┤  │││├─┤  ║  ├─┤├┴┐
-  ╚═╝┴ ┴  ┴   ╚═╝└─┘┴└─┘┘└┘└─┘└─┘       ╩ ╩╩ ╩   ╩ ╩└─┘─┴┘┴┴ ┴  ╩═╝┴ ┴└─┘
-
-                                 .|
-                                | |
-                                |'|            ._____
-                        ___    |  |            |.   |' .---"|
-                _    .-'   '-. |  |     .--'|  ||   | _|    |
-             .-'|  _.|  |    ||   '-__  |   |  |    ||      |
-             |' | |.    |    ||       | |   |  |    ||      |
-          ___|  '-'     '    ""       '-'   '-.'    '`      |____
+  ᓬ(• - •)ᕒ 
            
+  Axol sensing system. 
 
    Code for Homehub Firmware. HomeHub connects to a mesh of sensors and serves as a relay for data coming to and from the sensor system. 
    The device has a built in OLED screen for data visualization. 

@@ -7,20 +7,9 @@
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
+  ᓬ(• - •)ᕒ 
+
   Axol sensing system.
-
-  ╔═╗┬┌┬┐┬ ┬  ╔═╗┌─┐┬┌─┐┌┐┌┌─┐┌─┐       ╔╦╗╦╔╦╗  ╔╦╗┌─┐┌┬┐┬┌─┐  ╦  ┌─┐┌┐
-  ║  │ │ └┬┘  ╚═╗│  │├┤ ││││  ├┤   ───  ║║║║ ║   ║║║├┤  │││├─┤  ║  ├─┤├┴┐
-  ╚═╝┴ ┴  ┴   ╚═╝└─┘┴└─┘┘└┘└─┘└─┘       ╩ ╩╩ ╩   ╩ ╩└─┘─┴┘┴┴ ┴  ╩═╝┴ ┴└─┘
-
-                                 .|
-                                | |
-                                |'|            ._____
-                        ___    |  |            |.   |' .---"|
-                _    .-'   '-. |  |     .--'|  ||   | _|    |
-             .-'|  _.|  |    ||   '-__  |   |  |    ||      |
-             |' | |.    |    ||       | |   |  |    ||      |
-          ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
    Code for water quality sensor. The sensor uses a TDS meter to measure water conductivity.
    The code is based on the example code provided by DFrobot for the TDS meter.

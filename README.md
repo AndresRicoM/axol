@@ -10,19 +10,7 @@
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
-  ╔═╗┬┌┬┐┬ ┬  ╔═╗┌─┐┬┌─┐┌┐┌┌─┐┌─┐       ╔╦╗╦╔╦╗  ╔╦╗┌─┐┌┬┐┬┌─┐  ╦  ┌─┐┌┐
-  ║  │ │ └┬┘  ╚═╗│  │├┤ ││││  ├┤   ───  ║║║║ ║   ║║║├┤  │││├─┤  ║  ├─┤├┴┐
-  ╚═╝┴ ┴  ┴   ╚═╝└─┘┴└─┘┘└┘└─┘└─┘       ╩ ╩╩ ╩   ╩ ╩└─┘─┴┘┴┴ ┴  ╩═╝┴ ┴└─┘
-
-                                 .|
-                                | |
-                                |'|            ._____
-                        ___    |  |            |.   |' .---"|
-                _    .-'   '-. |  |     .--'|  ||   | _|    |
-             .-'|  _.|  |    ||   '-__  |   |  |    ||      |
-             |' | |.    |    ||       | |   |  |    ||      |
-          ___|  '-'     '    ""       '-'   '-.'    '`      |____
-
+  ᓬ(• - •)ᕒ
 
 Sensors for granular assessment of water usage
 patterns in informal settlements
@@ -36,6 +24,8 @@ Andres Rico - MIT Media Lab - aricom@mit.edu
 This repository contains all files needed to replicate a fully functional Axol sensing system.
 
 The current version of the system is has four sensor types and a HomeHub communication device. The four sensing units include tank sensors, bucket sensors, quality sensors and environmental sensors.
+
+<h1>Devices</h1>
 
 <h2>Homehub</h2>
 The Homehub acts as a user interface and as the centralized data relay for the system. All of the sensing units send the data directly to a Homehub. The Homehub formats and sends the infroamtion to a remote database. 
@@ -54,10 +44,11 @@ The quality sensor measures EC in water to get an estimate of Total Dissolved So
 <h2>Environmental Sensor</h2>
 The environmental sensor uses an STH sensor to measure enviroenmental temperature and humidity. The sensor can be a good way to evaluate system and battery performance. It can also be used to track environemetal variables of places were the other sensors are placed. 
 
+<h1>Demos</h1>
 
 
 
-<h2>Viewing your systems data </h2>
+<h1>Viewing your systems data </h1>
 
 You can register all devices at http://blindspot.media.mit.edu/homehubweb/registration.html
 All devices must be paired with a Homehub that has been previously registered. 
@@ -65,8 +56,10 @@ All devices must be paired with a Homehub that has been previously registered.
 You can check your systems data at http://blindspot.media.mit.edu/homehubweb/status_check.html
 By just typing in your homehubs registered mac address. 
 
-<h2>Data handling</h2>
+<h1>Data handling</h1>
 
 The system uses the Homehub to send data to a server hosted @MIT. All of the data of registered devices is accessible by the developers of the platform. If you do not want developers to have access you will need to build backend infrstructure that will allow you to save data in a different server and modify the connect_send(), get_system_stats(), and server_send() function in the homehubs <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
 
 Please contact aricom@mit.edu for historical access to data for your system. 
+
+<h1>License</h1>

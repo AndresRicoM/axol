@@ -7,20 +7,9 @@
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
+  ᓬ(• - •)ᕒ 
+
   Axol sensing system. 
-
-  ╔═╗┬┌┬┐┬ ┬  ╔═╗┌─┐┬┌─┐┌┐┌┌─┐┌─┐       ╔╦╗╦╔╦╗  ╔╦╗┌─┐┌┬┐┬┌─┐  ╦  ┌─┐┌┐
-  ║  │ │ └┬┘  ╚═╗│  │├┤ ││││  ├┤   ───  ║║║║ ║   ║║║├┤  │││├─┤  ║  ├─┤├┴┐
-  ╚═╝┴ ┴  ┴   ╚═╝└─┘┴└─┘┘└┘└─┘└─┘       ╩ ╩╩ ╩   ╩ ╩└─┘─┴┘┴┴ ┴  ╩═╝┴ ┴└─┘
-
-                                 .|
-                                | |
-                                |'|            ._____
-                        ___    |  |            |.   |' .---"|
-                _    .-'   '-. |  |     .--'|  ||   | _|    |
-             .-'|  _.|  |    ||   '-__  |   |  |    ||      |
-             |' | |.    |    ||       | |   |  |    ||      |
-          ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
    Code for temperature and humidity sensor for the Axol sensing system. The code runs on an ESP32 chip along with a STHx sensor module.
    The module is accessed by i2c. The code is adapted from the SensirionI2CSht4x library example. 

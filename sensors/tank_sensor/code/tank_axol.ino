@@ -7,20 +7,9 @@
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
+  ᓬ(• - •)ᕒ 
+
   Axol sensing system. 
-
-  ╔═╗┬┌┬┐┬ ┬  ╔═╗┌─┐┬┌─┐┌┐┌┌─┐┌─┐       ╔╦╗╦╔╦╗  ╔╦╗┌─┐┌┬┐┬┌─┐  ╦  ┌─┐┌┐
-  ║  │ │ └┬┘  ╚═╗│  │├┤ ││││  ├┤   ───  ║║║║ ║   ║║║├┤  │││├─┤  ║  ├─┤├┴┐
-  ╚═╝┴ ┴  ┴   ╚═╝└─┘┴└─┘┘└┘└─┘└─┘       ╩ ╩╩ ╩   ╩ ╩└─┘─┴┘┴┴ ┴  ╩═╝┴ ┴└─┘
-
-                                 .|
-                                | |
-                                |'|            ._____
-                        ___    |  |            |.   |' .---"|
-                _    .-'   '-. |  |     .--'|  ||   | _|    |
-             .-'|  _.|  |    ||   '-__  |   |  |    ||      |
-             |' | |.    |    ||       | |   |  |    ||      |
-          ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
    Code for tank quantity sensor. The seansor uses a vl53l4 optical sensor to detemine its distance from the water's surface. 
    The data is then used to calculate the quanity and fill percentage in the database. Volume is calaculated in the database backend.
