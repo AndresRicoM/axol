@@ -1,7 +1,5 @@
 # AXOL
 
-<img src="images/axol_system.jpeg">
-
 ```
    █████╗ ██╗  ██╗ ██████╗ ██╗     
   ██╔══██╗╚██╗██╔╝██╔═══██╗██║     
@@ -17,6 +15,8 @@ Andres Rico - MIT Media Lab - <aricom@mit.edu>
 ```
 
 <h1>Axol sensing system. </h1>
+
+<img src="images/axol_system.jpeg">
 
 Sensors for granular assessment of water usage patterns in informal settlements.
 
