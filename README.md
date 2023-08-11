@@ -1,4 +1,6 @@
-# AXOL
+<p align="center">
+      <img src="images/CS_logo_w.png" align="left">
+</p>
 
 ```
    █████╗ ██╗  ██╗ ██████╗ ██╗     
