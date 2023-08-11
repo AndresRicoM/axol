@@ -4,6 +4,8 @@
 
 </div><br><br><br>
 
+[![License]("images/by-nd.png")](https://badge.fury.io/py/tensorflow)
+
 <h1> AXOL </h1>
 
 Sensors for granular assessment of water usage patterns in informal settlements.
