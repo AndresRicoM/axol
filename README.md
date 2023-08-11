@@ -1,8 +1,8 @@
-<p align="center">
-      <img src="images/CS_logo_w.png" align="left" width="20%">
-      <img src="images/homehubaxol.png" align="center" width="30%">
+<div align="center">
+      <img src="images/CS_logo_w.png" align="left" width="10%">
+      <img src="images/homehubaxol.png" align="right" width="10%">
 
-</p><br><br><br>
+</div>
 
 ```
    █████╗ ██╗  ██╗ ██████╗ ██╗     
@@ -11,9 +11,6 @@
   ██╔══██║ ██╔██╗ ██║   ██║██║     
   ██║  ██║██╔╝ ██╗╚██████╔╝███████╗
   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
-
-  ᓬ(• - •)ᕒ
-
 ```
 Andres Rico - MIT Media Lab - <aricom@mit.edu>
 
