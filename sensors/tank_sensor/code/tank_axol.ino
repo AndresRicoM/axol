@@ -23,7 +23,8 @@
           ___|  '-'     '    ""       '-'   '-.'    '`      |____
 
    Code for tank quantity sensor. The seansor uses a vl53l4 optical sensor to detemine its distance from the water's surface. 
-   The data is then used to calculate the quanity and fill percentage in the database.  
+   The data is then used to calculate the quanity and fill percentage in the database. Volume is calaculated in the database backend.
+   You need to measure containers dimensions and capacity to register this device for the backend to calculate volume correctly. 
 
    Andres Rico - aricom@mit.edu
   
@@ -45,10 +46,14 @@
 #define uS_TO_S_FACTOR 1000000  /* Conversion factor for micro seconds to seconds */
 #define TIME_TO_SLEEP  10        /* Time ESP32 will go to sleep (in seconds) */
 
-//Receiver address
-uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub. 
+////CHANGE THESE VARIABLES FOR SETUP WITH HOMEHUB AND NETWORK////////
 
-constexpr char WIFI_SSID[] = ""; //WiFi name , no password is required. 
+//Receiver address
+uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub.  
+
+constexpr char WIFI_SSID[] = ""; //Network name, no password required.
+
+/////////////////////////////////////////////////////////////////////
 
 int32_t getWiFiChannel(const char *ssid) {
 
@@ -179,7 +184,8 @@ void setup() {
     // Send message via ESP-NOW
     esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
    
-   esp_sleep_enable_timer_wakeup(43200000000) ; //TIME_TO_SLEEP * uS_TO_S_FACTOR); //86400000000);
+   /////////////////Change value for higher or lower frequency of data collection. This is the time the ESP32 will sleep for.
+   esp_sleep_enable_timer_wakeup(43200000000) ; //TIME_TO_SLEEP * uS_TO_S_FACTOR); //Twice per day. Value is in microseconds.
 
    esp_wifi_stop();
 
