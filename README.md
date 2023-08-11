@@ -37,18 +37,22 @@ The tank sensor uses Adafruits VXL ToF distance sensor. It measures the distance
 <h2>Bucket Sensor</h2>
 The bucket sensor uses a simple tilt switch. The switch is closed whenever a bucket is flipped. Everytime that the switch is activated, the sensor sends a notice to the Homehub and the Homehub timestamps the information before sending it to the database. 
 
+<img src="images/Bucket_zoom.gif">
+<img src="images/bucket2.gif">
+
 <h2>Quality Sensor</h2>
 The quality sensor measures EC in water to get an estimate of Total Dissolved Solids. 
+
+<img src="images/buoy_floating.gif">
+
 
 <h2>Environmental Sensor</h2>
 The environmental sensor uses an STH sensor to measure enviroenmental temperature and humidity. The sensor can be a good way to evaluate system and battery performance. It can also be used to track environemetal variables of places were the other sensors are placed. 
 
-<h1>Demos</h1>
-
-<img src="images/Bucket_zoom.gif">
-
 
 <h1>Viewing your systems data </h1>
+
+<img src="images/dashupdate.gif">
 
 You can register all devices at http://blindspot.media.mit.edu/homehubweb/registration.html
 All devices must be paired with a Homehub that has been previously registered. 
