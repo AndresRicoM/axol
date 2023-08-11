@@ -32,10 +32,14 @@
 #include <esp_now.h>
 #include <esp_wifi.h>
 
+////CHANGE THESE VARIABLES FOR SETUP WITH HOMEHUB AND NETWORK////////
+
 //Receiver address
 uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub. 
 
 constexpr char WIFI_SSID[] = ""; //Network name, no password required. 
+
+/////////////////////////////////////////////////////////////////////
 
 int32_t getWiFiChannel(const char *ssid) {
 
@@ -53,7 +57,7 @@ int32_t getWiFiChannel(const char *ssid) {
 typedef struct struct_message {
   char id[50];
   int type;
-  //int liters = 10;
+  
 } struct_message;
 
 struct_message myData;
@@ -76,10 +80,9 @@ void setup() {
   pinMode(15, INPUT_PULLUP);
 
   send_espnow();
-  //attempts = 0;
 
   Serial.println("Going to bed...");
-  esp_sleep_enable_ext0_wakeup(GPIO_NUM_15, 0);
+  esp_sleep_enable_ext0_wakeup(GPIO_NUM_15, 0); //Set wake up pin to GPIO_NUM_15
   esp_wifi_stop();
   esp_deep_sleep_start();  
   
@@ -105,10 +108,6 @@ void send_espnow() {
 
   // Init ESP-NOW
   esp_now_init();
-  /*if (esp_now_init() != ESP_OK) {
-    Serial.println("Error initializing ESP-NOW");
-    return;
-  }*/
 
   // Once ESPNow is successfully Init, we will register for Send CB to
   // get the status of Trasnmitted packet
@@ -121,18 +120,10 @@ void send_espnow() {
   
   // Add peer
   esp_now_add_peer(&peerInfo);        
-  /*if (esp_now_add_peer(&peerInfo) != ESP_OK){
-    Serial.println("Failed to add peer");
-    return;
-  }*/
+
   // Send message via ESP-NOW
   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
-  delay(4000);
-  //Serial.println(millis());
-   /*while (!ESP_NOW_SEND_SUCCESS or attempts > 5) {
-    send_espnow();
-    attempts = attempts + 1;
-  }*/
+  delay(4000); // delay to allow ESP-NOW to work.
   
 }
 
