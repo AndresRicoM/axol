@@ -79,15 +79,15 @@ NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM
 - Upload sketch 
 - Reset device. Toggle switch to opposite position and presss the reset button. 
 
-<h1>Querying Data</h1>
-
-All system data can be queried through available [API calls](https://github.com/AndresRicoM/axol/wiki/API-Documentation). The calls allow you to get information on network status as well as to access all data for all registered sensors. You will need to firstly register a HomeHub as your HomeHub's Mac Add will act as your key to access all of your systems data.
-
 <h1>Device Registration</h1>
 
 Each device needs to be individually registered. You can register all devices [here](http://blindspot.media.mit.edu/homehubweb/registration.html). 
 
 All sensors must be paired with a HomeHub that has been previously registered. 
+
+<h1>Querying Data</h1>
+
+All system data can be queried through available [API calls](https://github.com/AndresRicoM/axol/wiki/API-Documentation). The calls allow you to get information on network status as well as to access all data for all registered sensors. You will need to firstly register a HomeHub as your HomeHub's Mac Add will act as your key to access all of your systems data.
 
 <h1>Viewing your system's data </h1>
 
