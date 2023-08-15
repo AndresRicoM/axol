@@ -79,6 +79,9 @@ NOTE: EACH DEVICE HAS A DIFFERENT PIN ORDER, REFERENCE EACH DEVICE'S PIN DIAGRAM
 - Upload sketch 
 - Reset device. Toggle switch to opposite position and presss the reset button. 
 
+<h1>Querying Data</h1>
+All system data can be queried through available [API calls](https://github.com/AndresRicoM/axol/wiki/API-Documentation). The calls allow you to get information on network status as well as to access all data for all registered sensors. You will need to firstly register a HomeHub as your HomeHub's Mac Add will act as your key to access all of your systems data.
+
 <h1>Device Registration</h1>
 
 Each device needs to be individually registered. You can register all devices [here](http://blindspot.media.mit.edu/homehubweb/registration.html). 
@@ -105,5 +108,3 @@ The system uses the HomeHub to send data to a server hosted @MIT. All of the dat
    server_send() 
    
 function in the HomeHub's <a href="https://github.com/AndresRicoM/axol/blob/main/homehub/code/cs_homehub.ino">code</a>. 
-
-Please contact <aricom@mit.edu> for historical access to data for your system. 
