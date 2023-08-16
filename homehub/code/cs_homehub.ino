@@ -929,7 +929,7 @@ void draw_clockdash() {
 void get_complete_weather() { //gets weather and location information.
   
   const String endpoint = "https://api.openweathermap.org/data/2.5/weather?lat=" + String(lat, 7) + "&lon=" + String(lon, 7) + "&appid=";
-  const String key = "df45df8f631d3860f77ad3f9feafc1cb";
+  const String key = "{Your Open Weather API Key}";
   
   HTTPClient http;
 
