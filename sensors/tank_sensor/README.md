@@ -41,4 +41,6 @@ quantity - component - estimated price
 <h2>PCB Diagram</h2>
 
 <img src="../../images/tank_diagram.jpeg">
+<img src="../../images/tank_schematic.png">
+<img src="../../images/tank_board.png">
 
