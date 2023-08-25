@@ -1,6 +1,7 @@
 <div align="center">
       <img src="images/CS_logo_w.png" align="left" width="12%">
-      <img src="images/homehubaxol.png" align="right" width="8%">
+      <img src="images/homehubaxol.png" align="right" width="8%"><br>
+      <img src="images/license.png" href="https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD" align="left" width="100%">
 
 </div><br><br><br>
 
