@@ -35,3 +35,5 @@ quantity - component - estimated price
 <h2>PCB Diagram</h2>
 
 <img src="../../images/environmental_diagram.jpeg">
+<img src="../../images/environmental_schematic.png">
+<img src="../../images/environmental_board.png">
