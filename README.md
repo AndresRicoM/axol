@@ -1,8 +1,7 @@
 <div align="center">
       <img src="images/CS_logo_w.png" align="left" width="12%">
       <img src="images/homehubaxol.png" align="right" width="8%"><br>
-      [![Alt text](images/license.png)](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
-      <img src="images/license.png" href="https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD" align="left" width="12%">
+      [<img src="images/license.png" align="left" width="12%">](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
 
 </div><br><br><br>
 
