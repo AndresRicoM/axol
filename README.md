@@ -1,10 +1,11 @@
 <div align="center">
       <img src="images/CS_logo_w.png" align="left" width="12%">
       <img src="images/homehubaxol.png" align="right" width="8%"><br>
-      [<img alt="alt_text" align="left" width="12%"  src="images/license.png" >](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
+      <a href="https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD">
+            <img alt="alt_text" align="left" width="12%"  src="images/license.png" >
+      </a>
 
 </div><br><br><br>
-[![license](https://github.com/AndresRicoM/axol/blob/main/images/license.png)](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
 
 <h1> axol </h1>
 
