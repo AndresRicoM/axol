@@ -37,6 +37,8 @@ quantity - component - estimated price
 <h2>PCB Diagram</h2>
 
 <img src="../../images/quality_diagram.jpeg">
+<img src="../../images/quality_schematic.png">
+<img src="../../images/quality_board.png">
 
 <h2>Demos</h2>
 
