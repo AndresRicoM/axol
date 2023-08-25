@@ -4,6 +4,7 @@
       [!<img src="images/license.png" align="left" width="12%" />](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
 
 </div><br><br><br>
+[![license](images/license.png)](https://github.com/AndresRicoM/axol/blob/main/LICENSE.MD)
 
 <h1> axol </h1>
 
