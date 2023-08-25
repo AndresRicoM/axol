@@ -40,6 +40,8 @@ quantity - component - estimated price
 <h2>PCB Diagram</h2>
 
 <img src="../../images/bucket_diagram.jpeg">
+<img src="../../images/bucket_schematic.png">
+<img src="../../images/bucket_board.png">
 
 <h2>Demos</h2>
 
