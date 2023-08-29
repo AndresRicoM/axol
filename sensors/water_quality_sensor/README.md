@@ -16,6 +16,27 @@ Andres Rico - MIT Media Lab - <aricom@mit.edu>
 
 <h1>Quality Sensor </h1>
 
+<h2>Program Set-up</h2>
+
+You will need to add your wifi credentials to the program. The device only needs an SSID for esp32 to activate. You do not need a password. Make sure that the SSID provided is the same as the one provided to you HomeHub. The devices need to be connected to the same network. To add SSID modify the following line:
+
+```
+  constexpr char WIFI_SSID[] = ""; //Network name, no password required.
+
+```
+
+You will also need to add the mac address of the HomeHub that the sensor will send its data to. To add the mac address modify the following line: 
+
+Substitute each 00 pair with the specific digits of the Homehubs mac address.
+
+```
+  //Receiver address
+  uint8_t broadcastAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //MAC Address for receiving homehub.
+
+```
+
+After modifying these lines, you are ready to upload the program to your device.
+
 <h2>Bill Of Materials</h2>
 
 ```
