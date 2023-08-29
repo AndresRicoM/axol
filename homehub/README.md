@@ -16,6 +16,34 @@ Andres Rico - MIT Media Lab - <aricom@mit.edu>
 
 <h1>Homehub </h1>
 
+<h2>Program Set-up</h2>
+You will need to add your wifi credentials to the program. The device needs an SSID and a password. If the network is open. You can leave the password as an emptu string. 
+Modify the following lines:
+
+```
+  //WIFI Variables
+  const char* ssid = ""; //Change accordingly to connect to a WIFi network.
+  const char* password = "";
+
+```
+
+You will also need to add your OpenWeather API key. If you do not have one, you can get a free key [here](https://openweathermap.org/api).
+Add yout key in the following line:
+
+```
+  In the 
+
+  get_complete_weather()
+
+  fucntion, modify line:
+
+  //Open Weather API Key
+  const String key = "{Your Open Weather API Key}";
+
+```
+
+After modifying these lines, you are ready to upload the program to your device.
+
 <h2>Bill Of Materials</h2>
 
 ```
