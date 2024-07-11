@@ -21,7 +21,6 @@
 #include <WiFi.h>
 #include <Wire.h>
 #include <SPI.h>
-#include <NTPClient.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 #include <Adafruit_SSD1306.h>
@@ -393,11 +392,12 @@ const char* ssid = ""; //Change accordingly to connect to a WIFi network.
 const char* password = "";
 
 //Time Server Variables
-WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP);
 String formattedDate;
 String dayStamp;
 String timeStamp;
+const char* ntpServer = "pool.ntp.org";
+long  gmtOffset_sec = 0;
+const int   daylightOffset_sec = 0;
 
 //Location Variables
 float lat, lon;
@@ -448,12 +448,12 @@ bool received_message = false;
 typedef struct struct_message {
   char id[50];
   int type;
-  int data1;
-  int data2;
-  int data3;
-  int data4;
-  int data6;
-  int data7;
+  float data1;
+  float data2;
+  float data3;
+  float data4;
+  float data6;
+  float data7;
 } struct_message;
 
 struct_message myData;
@@ -565,11 +565,9 @@ void setup() {
 
   //Initialize time server
   Serial.println("Initializing Time Server");
-  timeClient.begin();
+  gmtOffset_sec = timezone; // +-3600 per hour difference against GMT.
   Serial.println("Time client started");
-  timeClient.setTimeOffset(timezone); // +-3600 per hour difference against GMT.
 
-  //sent_time = 0;
   sending_climate = true;
   server_send();
   Serial.println(greeting);
@@ -708,27 +706,32 @@ int get_buttons() { //Funtion returns int from 1 - 6
 
 void get_time() { //Functiuons queries server to get current time. Activates time screen.
 
-  while (!timeClient.update()) {
-
-    timeClient.forceUpdate();
-
+  // Init and get the time
+  configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
+  struct tm timeinfo;
+  if(!getLocalTime(&timeinfo)){
+    Serial.println("Failed to obtain time");
+    return;
   }
 
-  // The formattedDate comes with the following format:
-  // 2018-05-28T16:00:13Z
-  // We need to extract date and time
-  formattedDate = timeClient.getFormattedDate();
-  Serial.println(formattedDate); //Variable for Timestamps
+  //int num_month = month(timeinfo);
+  //Serial.println(num_month);
+
+  char buffer[80];  // Buffer to hold the formatted string. Adjust the size as needed.
+  strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", &timeinfo);
+  formattedDate = String(buffer);
+  //Serial.println(formattedDate);
 
   // Extract date
-  int splitT = formattedDate.indexOf("T");
+  int splitT = formattedDate.indexOf(" ");
   dayStamp = formattedDate.substring(0, splitT);
   Serial.print("DATE: ");
-  Serial.println(dayStamp);
+  //Serial.println(dayStamp);
+
   // Extract time
-  timeStamp = formattedDate.substring(splitT + 1, formattedDate.length() - 4);
+  timeStamp = formattedDate.substring(splitT + 1, formattedDate.length() - 3);
   Serial.print("HOUR: ");
-  Serial.println(timeStamp);
+  //Serial.println(timeStamp); 
 
 }
 
