@@ -28,6 +28,7 @@
 #include <esp_now.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
+#include "time.h"
 
 //Screen Variables
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
